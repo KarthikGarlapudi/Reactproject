@@ -1,0 +1,136 @@
+/* Cart Container */
+.cart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header */
+.cart-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+/* Cart Items */
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-items li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons Styling */
+.cart-buttons button,
+.discount-buttons button,
+.apply-coupon-btn,
+.complete-order-btn {
+    padding: 8px 12px;
+    margin: 5px 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.cart-buttons .increase-btn {
+    background-color: #4caf50;
+}
+
+.cart-buttons .decrease-btn {
+    background-color: #f44336;
+}
+
+.cart-buttons .remove-btn {
+    background-color: #ff9800;
+}
+
+/* Discount Buttons */
+.discount-buttons button {
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.discount-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Apply Coupon */
+.apply-coupon-btn {
+    background-color: #28a745;
+    width: 100%;
+}
+
+.apply-coupon-btn:hover {
+    background-color: #218838;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Complete Order Button */
+.complete-order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc107;
+    font-size: 16px;
+}
+
+.complete-order-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Messages */
+.discount-msg,
+.coupon-msg {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #28a745;
+}
+
+/* Total Amount */
+.total-bill {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .cart-container {
+        padding: 15px;
+    }
+
+    .discount-buttons button,
+    .apply-coupon-btn,
+    .complete-order-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
